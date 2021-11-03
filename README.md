@@ -92,6 +92,7 @@ Athens.configure do |config|
   config.aws_profile         = 'myprofile'  # Optional
   config.aws_region          = 'us-east-1'  # Optional
   config.wait_polling_period = 0.25         # Optional - What period should we poll for the complete query?
+  config.encryption_option = "SSE_S3"       # Optional - what encryption option to use? Can be nil or "SSE_S3"
 end
 ```
 
@@ -174,4 +175,3 @@ The gem is available as open source under the terms of the [WTFPL License](http:
 ## Code of Conduct
 
 Everyone interacting in the Athens project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/getletterpress/athens/blob/master/CODE_OF_CONDUCT.md).
-
